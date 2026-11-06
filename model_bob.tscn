@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cbxe5kylcm7ub"]
+
+[ext_resource type="PackedScene" uid="uid://dqg8omjn7h6um" path="res://assets/ships/bob/Bob.gltf" id="1_yly0i"]
+
+[node name="Bob2" unique_id=2059031582 instance=ExtResource("1_yly0i")]

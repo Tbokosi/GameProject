@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://ccctpuqm3uadr"]
+
+[ext_resource type="PackedScene" uid="uid://b4c7djnppf5ox" path="res://model_pancake.tscn" id="1_sx288"]
+[ext_resource type="Script" uid="uid://dhf1ofpysoa7w" path="res://scripts/resources/enemy_data.gd" id="1_vwj2g"]
+
+[resource]
+script = ExtResource("1_vwj2g")
+display_name = "Interceptor"
+model_scene = ExtResource("1_sx288")
+max_speed = 40.0
+acceleration = 25.0
+turn_speed = 2.2
+max_health = 30
+chase_range = 140.0
+attack_range = 50.0
+fire_rate = 2.0
+damage = 5
+metadata/_custom_type_script = "uid://dhf1ofpysoa7w"

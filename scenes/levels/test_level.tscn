@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ba1rpayqv3xg2" path="res://scenes/levels/test_level.gd" id="1_48ne7"]
 [ext_resource type="PackedScene" uid="uid://bnpo3mrjbrhyx" path="res://scenes/ships/player_ship.tscn" id="1_yautc"]
 [ext_resource type="Resource" uid="uid://bh70gjbn44hvp" path="res://resources/ship_data/ship_spitfire.tres" id="2_fr1um"]
+[ext_resource type="Script" uid="uid://cyo73m5antq3n" path="res://scripts/player/chase_camera.gd" id="4_cyt5c"]
 [ext_resource type="PackedScene" uid="uid://ca0gibkdcgmqu" path="res://scenes/ui/virtual_joystick.tscn" id="5_6xh4u"]
 [ext_resource type="Script" uid="uid://cicigg60cardk" path="res://scripts/components/health_component.gd" id="6_6xh4u"]
 [ext_resource type="PackedScene" uid="uid://dvdd4s10hww3h" path="res://scenes/ui/fire_button.tscn" id="7_7x1jh"]
@@ -29,6 +30,7 @@ ship_data = ExtResource("2_fr1um")
 
 [node name="Camera3D" type="Camera3D" parent="PlayerShip" unique_id=1444441040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 10)
+script = ExtResource("4_cyt5c")
 
 [node name="Ground" type="MeshInstance3D" parent="." unique_id=627065793]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12131095, -0.7987747, 0.13873506)

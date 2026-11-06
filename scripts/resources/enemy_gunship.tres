@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bdc3yyatvcvr6"]
+
+[ext_resource type="PackedScene" uid="uid://cbxe5kylcm7ub" path="res://model_bob.tscn" id="1_3cx1y"]
+[ext_resource type="Script" uid="uid://dhf1ofpysoa7w" path="res://scripts/resources/enemy_data.gd" id="1_c04cw"]
+
+[resource]
+script = ExtResource("1_c04cw")
+display_name = "Gunship"
+model_scene = ExtResource("1_3cx1y")
+max_speed = 22.0
+acceleration = 10.0
+turn_speed = 1.0
+max_health = 80
+chase_range = 110.0
+attack_range = 70.0
+fire_rate = 1.0
+damage = 12
+metadata/_custom_type_script = "uid://dhf1ofpysoa7w"

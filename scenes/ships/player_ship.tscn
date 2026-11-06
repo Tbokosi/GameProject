@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cicigg60cardk" path="res://scripts/components/health_component.gd" id="1_rb44i"]
 [ext_resource type="Script" uid="uid://p276ok4cj4g3" path="res://scripts/components/weapon_component.gd" id="3_4el6i"]
 [ext_resource type="PackedScene" uid="uid://excmdtl837wy" path="res://scenes/projectiles/laser_player.tscn" id="4_0dgdr"]
+[ext_resource type="Script" uid="uid://cyo73m5antq3n" path="res://scripts/player/chase_camera.gd" id="5_0dgdr"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_vg3be"]
 
@@ -35,3 +36,8 @@ script = ExtResource("3_4el6i")
 laser_scene = ExtResource("4_0dgdr")
 muzzles_root = NodePath("../Muzzles")
 metadata/_custom_type_script = "uid://p276ok4cj4g3"
+
+[node name="ChaseCamera" type="Camera3D" parent="." unique_id=1127462166]
+current = true
+far = 1000.0
+script = ExtResource("5_0dgdr")

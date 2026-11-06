@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://bh70gjbn44hvp"]
+
+[ext_resource type="PackedScene" uid="uid://bxw3y5gs8f46w" path="res://scenes/ships/ship_model_spitfire.tscn" id="1_4ld3u"]
+[ext_resource type="Script" uid="uid://nflpyc7hqfoq" path="res://scripts/resources/ship_data.gd" id="1_gbfq2"]
+
+[resource]
+script = ExtResource("1_gbfq2")
+display_name = "Spitfire"
+model_scene = ExtResource("1_4ld3u")
+max_speed = 60.0
+acceleration = 40.0
+turn_speed = 2.8
+max_health = 70
+metadata/_custom_type_script = "uid://nflpyc7hqfoq"

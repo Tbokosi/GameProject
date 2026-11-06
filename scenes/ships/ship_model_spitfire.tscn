@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bxw3y5gs8f46w"]
+
+[ext_resource type="PackedScene" uid="uid://iaif0hp16013" path="res://assets/ships/spitfire/Spitfire.gltf" id="1_vgj5h"]
+
+[node name="Spitfire2" unique_id=975153665 instance=ExtResource("1_vgj5h")]

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bnpo3mrjbrhyx"]
+
+[ext_resource type="Script" uid="uid://bllnpv4mbuwh0" path="res://scripts/player/player_ship.gd" id="1_36hv0"]
+[ext_resource type="Script" uid="uid://cicigg60cardk" path="res://scripts/components/health_component.gd" id="1_rb44i"]
+[ext_resource type="Script" uid="uid://p276ok4cj4g3" path="res://scripts/components/weapon_component.gd" id="3_4el6i"]
+[ext_resource type="PackedScene" uid="uid://excmdtl837wy" path="res://scenes/projectiles/laser_player.tscn" id="4_0dgdr"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vg3be"]
+
+[node name="PlayerShip" type="CharacterBody3D" unique_id=1471311037]
+collision_layer = 2
+script = ExtResource("1_36hv0")
+
+[node name="ModelHolder" type="Node3D" parent="." unique_id=685873173]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1641499256]
+shape = SubResource("SphereShape3D_vg3be")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=37420021]
+script = ExtResource("1_rb44i")
+metadata/_custom_type_script = "uid://cicigg60cardk"
+
+[node name="Muzzles" type="Node3D" parent="." unique_id=879821985]
+
+[node name="MuzzleLeft" type="Marker3D" parent="Muzzles" unique_id=204196470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1.5)
+
+[node name="MuzzleRight" type="Marker3D" parent="Muzzles" unique_id=145469474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1.5)
+
+[node name="TestLevel" type="Node3D" parent="." unique_id=2091226577]
+
+[node name="Weapon" type="Node" parent="." unique_id=1403996696 node_paths=PackedStringArray("muzzles_root")]
+script = ExtResource("3_4el6i")
+laser_scene = ExtResource("4_0dgdr")
+muzzles_root = NodePath("../Muzzles")
+metadata/_custom_type_script = "uid://p276ok4cj4g3"

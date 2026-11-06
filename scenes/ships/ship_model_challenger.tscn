@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://byspu3vhhqfpp"]
+
+[ext_resource type="PackedScene" uid="uid://dqyep7j30rvkq" path="res://assets/ships/challenger/Challenger.gltf" id="1_t4gkp"]
+
+[node name="Challenger2" unique_id=944716418 instance=ExtResource("1_t4gkp")]

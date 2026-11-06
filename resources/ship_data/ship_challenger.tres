@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://gvehlnhpb46w"]
+
+[ext_resource type="Script" uid="uid://nflpyc7hqfoq" path="res://scripts/resources/ship_data.gd" id="1_f5d5d"]
+[ext_resource type="PackedScene" uid="uid://byspu3vhhqfpp" path="res://scenes/ships/ship_model_challenger.tscn" id="1_ms784"]
+
+[resource]
+script = ExtResource("1_f5d5d")
+display_name = "Challenger"
+model_scene = ExtResource("1_ms784")
+max_speed = 45.0
+acceleration = 25.0
+metadata/_custom_type_script = "uid://nflpyc7hqfoq"

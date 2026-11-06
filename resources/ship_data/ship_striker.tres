@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ShipData" format=3 uid="uid://cgrnhoqjcuhqy"]
+
+[ext_resource type="Script" uid="uid://nflpyc7hqfoq" path="res://scripts/resources/ship_data.gd" id="1_ntm3x"]
+[ext_resource type="PackedScene" uid="uid://cky63bj15f341" path="res://scenes/ships/ship_model_striker.tscn" id="1_q8rrd"]
+
+[resource]
+script = ExtResource("1_ntm3x")
+display_name = "Striker"
+model_scene = ExtResource("1_q8rrd")
+max_speed = 30.0
+acceleration = 12.0
+turn_speed = 1.4
+max_health = 160
+metadata/_custom_type_script = "uid://nflpyc7hqfoq"

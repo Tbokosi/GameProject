@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dvdd4s10hww3h"]
+
+[ext_resource type="Script" uid="uid://eqn1p1vtnfbo" path="res://scripts/ui/fire_button.gd" id="1_7n1fm"]
+
+[node name="FireButton" type="Control" unique_id=2105331137]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_7n1fm")
